@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>CGPA</title>
+  <link rel="stylesheet" href="{% static 'css/cgps.css' %}">
+  <style>
+   /*  body
+    {
+      background-image: url("{% static '\images\cgpa-bg4-nums.png' %}");
+    }*/
+    
+  </style>
+</head>
+<body bgcolor="black">
+  
+   <nav class="navbar">
+     <ul>
+    
+      {% if user.is_authenticated %}
+       <li><h3>Hello {{ user.username }}</h3></li>
+      {% endif %}
+      {% if user.is_authenticated %}
+       <li><h3><a href="{% url 'logout' %}">Logout</a></h3></li> 
+      {% else %}
+       <li><h1>Hello, Ghost</h1></li>
+       <li><h3><a href="{% url 'login' %}">Login</a></h3></li> 
+      {% endif %}
+    </ul>
+    </nav>
+<div class="main">
+  <div class="container">
+  <div class="js-error error"></div>
+   <div class="inp-container">
+    <p class="js-no-course no-course-css"></p>
+    <p class="js-c_p_input js-p1 comple-css"></p>
+    <p class="js-points"></p>
+    <p class="js-c_gpa c_gpa-css"></p>
+  </div>
+ <div class="disclaimer">
+  <h1>Disclaimer</h1>
+  <h3>This Grading System only used for <b>Sethu Institute of Technology</b> Students </h3>
+   <div class="grade-container">
+    <div class="grade">
+       <div>Letter Grade</div>
+       <div>O</div>
+       <div>A+</div>
+       <div>A</div>
+       <div>B+</div>
+       <div>B</div>
+       <div>C</div>
+       <div>U</div>
+       <div>SA</div>
+       <div>AB</div>
+       <div>Grade Point</div>
+       <div>10</div>
+       <div>9</div>
+       <div>8</div>
+       <div>7</div>
+       <div>6</div>
+       <div>5</div>
+       <div>0</div>
+       <div>0</div>
+       <div>0</div>
+    </div>
+   </div>
+ </div>
+</div>
+</div>
+
+  <script src="{% static  'js_files/cgpa.js'%}"></script>
+
+
+</body>
+</html>
