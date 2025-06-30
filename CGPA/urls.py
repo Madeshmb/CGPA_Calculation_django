@@ -20,6 +20,6 @@ from cgpa_calc.views import logout_user
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('cgpa/',include('cgpa_calc.urls')),
+    path('',include('cgpa_calc.urls')),
 
 ]
