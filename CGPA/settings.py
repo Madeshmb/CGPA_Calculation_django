@@ -26,7 +26,7 @@ SECRET_KEY = config('DJANGO_SECRET_KEY',default='dummy-insecure-key')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = config('DJANGO_ALLOWED_HOSTS',default='localhost').split(',')
+ALLOWED_HOSTS = ['cgpa-calculation.onrender.com']
 
 
 # Application definition
