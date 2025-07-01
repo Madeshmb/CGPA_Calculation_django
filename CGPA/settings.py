@@ -88,7 +88,7 @@ DATABASES = {
             }
 }
 
-
+# postgresql://cgpa_calculation_user:5zN76NJyqdUcXex6zNyLmIfIi3m4i7Jq@dpg-d1he20fdiees73csumsg-a.frankfurt-postgres.render.com/cgpa_calculation
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
 
